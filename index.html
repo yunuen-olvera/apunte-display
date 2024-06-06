@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Etiqueta semántica -->
+    <!-- HEADER: Etiqueta semántica para la cabecera de contenido -->
+    <header>
+        <h1>Display</h1>
+
+    </header>
+    <!-- MAIN: Etiqueta semántica para el contenido principal -->
+    <main>
+        <h2>Definición</h2>
+        <p>Pantalla, visualización, muestra. Lo que se muestra en la pantalla</p>
+        <p>La propieddad "display" especifica si un elemento es tratado como block o inline element y el diseño de lxs
+            hijxs.</p>
+        <br>
+        <article id="displayNone">
+            <h2>Display None</h2>
+            <p><strong>Permite dejar de visualizar contenido dentro del sitio.</strong></p>
+            <p> Cuando ocupamos uno de estos, las etiquetas dejan de verse pero el código sigue ahí.</p>
+        </article>
+        <hr>
+        <article id="displayBlock">
+            <h2>Display Block</h2>
+            <p>El elemento genera un cuadro de elemento de bloque.</p>
+            <p>Esto quiere decir que el bloque (todo en HTML es un bloque) ocupa todo el espacio disponible de izquierda
+                a derecha (todo el renglón dentro del componente padre).</p>
+            <p><strong>Cuando le ponemos a un elemento que ocupe toda la línea.</strong></p>
+            <p>Sin tamaño especificado:</p>
+            <figure class="ejemplo">
+                <h1 class="displayBlock">Texto</h1>
+                <h1 class="displayBlock">Texto</h1>
+            </figure>
+            <p>Con tamaño especificado:</p>
+            <figure class="ejemplo">
+                <h1 class="displayBlockConTamaño">Texto</h1>
+                <h1 class="displayBlockConTamaño">Texto</h1>
+            </figure>
+        </article>
+        <article id="displayInline">
+            <h2>Display Inline</h2>
+            <p>El elemento genera uno o más cuadros de elemento en línea.</p>
+            <p>Significa que el contenedor o bloque se adapta al ancho de su contenido hijx.</p>
+            <p>Si le pones tamaño, ignora las propiedades de alto (height) y ancho (width).</p>
+            <p><strong>El contenido solo ocupa el espacio que necesita.</strong></p>
+            <figure class="ejemplo">
+                <h1 class="displayInline">Texto</h1>
+                <h1 class="displayInline">Texto</h1>
+            </figure>
+
+        </article>
+        <article id="displayInline-Block">
+            <h2>Display Inline-Block</h2>
+            <p></p>
+            <p>Si se le pone tamaño al display block funciona pero sigue ocupando todo el renglón.</p>
+            <p><strong>El contenido ocupa el espacio designado.</strong></p>
+            <figure class="ejemplo">
+                <h1 class="displayInline-Block">Texto</h1>
+                <h1 class="displayInline-Block">Texto</h1>
+            </figure>
+            <p>Esto puede ser problemático si se quiere controlar el tamaño del componente y que el contenido esté en la
+                misma línea.</p>
+
+        </article>
+        <br>
+    </main>
+    <!-- FOOTER: Etiqueta semántica para el pie de página -->
+    <footer>
+        <p class="textoFinal"> NINGUNA DE LAS PROPIEDADES SE HEREDA</p>
+        <img src="IMG_4449.jpeg" alt="cuandoseusan" width="700px">
+        <p><s>Esto funciona para los "padres". Flex y Grid funcionan para los "hijxs".</s></p>
+    </footer>
+</body>
+
+</html>

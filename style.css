@@ -1,0 +1,54 @@
+/*Selector de tipo (etiqueta)
+=> nombre etiqueta{}*/
+
+body {
+    /*Regla de CSS*/
+
+    /*propiedad:valor*/
+    background-color: lemonchiffon;
+}
+
+/*Selector de clase*/
+.ejemplo {
+    height: 400px;
+    width: 400px;
+    background-color: darkkhaki;
+}
+
+.displayBlock {
+    display: block;
+    background-color: rgb(245, 211, 160);
+    color: darkgreen;
+}
+/* Ejemplo de que sí se le puede modificar */
+.displayBlockConTamaño {
+    display: block;
+    background-color: rgb(245, 211, 160);
+    color: darkgreen;
+    /* Se le puede modificar el tamaño */
+    width: 100px;
+    height: 100px;
+}
+
+.displayInline {
+    display: inline;
+    background-color: rgb(245, 211, 160);
+    color: darkgreen;
+    /* No se le puede modificar el tamaño */
+    width: 100px;
+    height: 100px;
+}
+
+.displayInline-Block {
+    display: inline-block;
+    background-color: rgb(245, 211, 160);
+    color: darkgreen;
+    width: 100px;
+    height: 100px;
+}
+
+.textoFinal{
+    color: darkgreen;
+    background-color: rgb(245, 211, 160);
+    font-size: xx-large;
+}
